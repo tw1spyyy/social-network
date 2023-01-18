@@ -1,0 +1,43 @@
+.dialogs{
+    background: #aebbcf;
+    display: grid;
+    grid-template-columns: 3fr 10fr;
+}
+.contacts__list{
+    border-right: 2px solid #5b6675;
+}
+.contacts__item{
+    padding: 10px;
+    border-bottom: 1px solid #5b6675;
+}
+.messages{
+   padding: 10px; 
+}
+.messages__message{
+    margin-bottom: 10px;
+}
+.messages__message:nth-child(2n) {
+    text-align: right;
+}
+.messages__form{
+    padding-top: 10px;
+    border-top: 2px solid #5b6675;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.messages__form-area{
+    border: none;
+    padding: 5px;
+    width: 80%;
+    height: 30px;
+    outline: none;
+}
+.messages__form-btn{
+    width: 16%;
+    height: 30px;
+    border: none;
+    color: #fff;
+    background: #DEB887;
+}

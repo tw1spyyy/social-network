@@ -1,0 +1,89 @@
+.music{
+    display: flex;
+    justify-content: space-between;
+}
+.music__all{
+    width: 67%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.music__my{
+    padding-left: 5px;
+    width: 31%;
+    border-left: 2px solid #ccc;
+}
+.music__item{
+    font-size: 13px;
+    height: 210px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.music__item-img{
+    width: 100%;
+    border-radius: 10px;
+}
+.music__item-author{
+    width: 100%;
+}
+.music__item-desc{
+    margin-bottom: auto;
+}
+.music__item-button{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    margin-left: -2px;
+}
+.music__item-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.music__my .music__item{
+    display: flex;
+    height: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.music__my  .music__item-desc{
+   margin-right: auto;
+   margin-bottom: 0;
+}
+.music__my  .music__item-img{
+    width: 40px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.music__my .music__item-button{
+    margin-left: 4px;
+    margin-right: 1px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+.music__my .music__item-button img {
+    width: 20px;
+    height: 20px;
+}
+.music__my-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+}

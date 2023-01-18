@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import { Header } from "./Components/Header/Header";
+import { Dialogs } from "./Components/Dialogs/Dialogs";
+import { Profile } from "./Components/Profile/Profile";
+import { Sidebar } from "./Components/Sidebar/Sidebar";
+import { MusicContainer } from "./Components/Music/MusicContainer";
 
-function App() {
+const App = (props) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <Header />
+      <Sidebar store={props.store} />
+      <div className="content">
+        <Routes>
+          <Route path="/Profile" element={<Profile />} />
+          <Route path="/Dialogs" element={<Dialogs store={props.store} />} />
+          <Route path="/Music" element={<MusicContainer />} />
+        </Routes>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
